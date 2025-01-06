@@ -8,6 +8,8 @@ from sqlalchemy import select
 
 Base.metadata.create_all(bind=engine)
 
+
+# greet message
 message = random_message.greet_message()
 
 app = Flask(__name__)
